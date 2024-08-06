@@ -39,26 +39,68 @@ main{
 
     div.row{
     height: 100vh;
+   
     }
 
     .menu{
-    background-color: #7a1047;
+    background-color: #1b000e;
     color: white;
     
-    div{
+    
+        div{
         padding: 8px;
-    }
+        }
 
-    div:hover{
+        div:hover{
         background-color: #be3980;
         cursor: pointer;
-    }
+        }
 
-    div.item{
+        div.item{
         padding: 8px 8px 8px 24px;
         font-size: 12px;
+        }
     }
 
-    }
 
-}
+    .modulo{
+
+        .titulo{
+            background-color: rgb(237, 237, 237);
+            border-left: 12px solid #1b000e;
+            padding: 16px;
+        }
+            
+        div.botoes{
+            display: flex;
+            justify-content: end;
+            padding: 12px 0;
+        
+            button{
+                border: none;
+                background-color: #1b000e;
+                color: white;
+                padding: 8px 24px;
+                margin-left: 8px;
+                border-radius: 4px;
+            }
+
+            button:hover{
+                background-color: #be3980;
+            }
+        }
+                
+        .tabela{
+            padding: 16px;
+            background-color: rgb(237, 237, 237);
+
+            button{
+                background-color: #1b000e;
+                color: white;
+            }
+            button:hover{
+                background-color: #be3980;
+            }
+        }
+    }
+}   

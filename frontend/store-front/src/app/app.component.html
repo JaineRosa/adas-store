@@ -22,17 +22,20 @@
 
 <main>
   
-  <div class="row">
+  <div class="row m-0 p-0">
 
-    <div class="col-2 menu">
+    <div class="col-2 p-0 menu">
       <div>Cadastros</div>
       <div class="item">
-        Categorias
+        <i class="bi bi-book-half"></i>
+         Categorias
       </div>
       <div class="item">
+        <i class="bi bi-bag-heart-fill"></i>
         Produto
       </div>
       <div class="item">
+        <i class="bi bi-people-fill"></i>
         Cliente
       </div>
       <div>
@@ -46,8 +49,83 @@
 
     
 
-    <div class="col-10 borda">
-      <h1>teste</h1>
+    <div class="col-10 p-4 modulo">
+      <div class="col-12 titulo">
+        <h4>Módulo de Produto</h4>
+      </div>
+      <div class="col-12 botoes">
+        <button>
+          <i class="bi bi-funnel"></i>
+          Filtrar
+        </button>
+        <button>
+          <i class="bi bi-plus-lg"></i>
+          Novo
+        </button>
+      </div>
+      <div class="col-12 tabela">
+        <table class="table table-hover m-0">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>mdo</td>
+              <td><div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Opções
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Ver detalhe</button></li>
+                  <li><button class="dropdown-item" type="button">Editar</button></li>
+                  <li><button class="dropdown-item" type="button">Excluir</button></li>
+                </ul>
+              </div></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>fat</td>
+              <td><div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Opções
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Ver detalhe</button></li>
+                  <li><button class="dropdown-item" type="button">Editar</button></li>
+                  <li><button class="dropdown-item" type="button">Excluir</button></li>
+                </ul>
+              </div></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>twitter</td>
+              <td><div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Opções
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Ver detalhe</button></li>
+                  <li><button class="dropdown-item" type="button">Editar</button></li>
+                  <li><button class="dropdown-item" type="button">Excluir</button></li>
+                </ul>
+              </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
   </div>
 </main>
