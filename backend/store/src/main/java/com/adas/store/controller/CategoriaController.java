@@ -42,4 +42,6 @@ public class CategoriaController {
         return ResponseEntity.ok(categoria);
     }
 
+
+
 }
