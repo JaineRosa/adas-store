@@ -1,1 +1,31 @@
-<p>categoria-form works!</p>
+<div class="col-12 titulo">
+    <h2>{{isEdicao ? 'Editar Categoria': 'Nova Categoria'}}</h2>
+</div>
+<form onsubmit="salvar()">
+
+    <div class="col-6">
+        <label for="id" class="form-label">Id</label>
+        <input type="text" id="id" name="id" class="form-control" [(ngModel)]="this.categoria.id">
+    </div>
+
+    <div class="col-12">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" id="nome" name="nome" class="form-control" [(ngModel)]="this.categoria.nome">
+    </div>
+
+    
+        <div class="col-4 mt-3 ">
+            <input type="checkbox" id="status" name="status"
+                [(ngModel)]="this.categoria.status">
+            <label  for="status">Categoria Ativa</label>
+        </div>
+    
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">{{this.isEdicao ? 'Salvar alterações' : 'Adicionar novo'}}</button>
+        <button routerLink="/categorias" class="btn btn-primary">Cancelar</button>
+    </div>
+
+    
+
+</form>

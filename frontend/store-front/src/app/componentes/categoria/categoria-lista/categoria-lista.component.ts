@@ -14,7 +14,29 @@ export class CategoriaListaComponent {
   constructor(private categoriaService: CategoriaService){}
 
   ngOnInit(): void{
-    this.carregarCategorias();
+    //this.carregarCategorias();
+    this.categorias = [
+      {
+        id : 1,
+        nome: "Software",
+        status: false
+      },
+      {
+        id : 2,
+        nome: "IA",
+        status: true
+      },
+      {
+        id : 3,
+        nome: "Periféricos",
+        status: false
+      },
+      {
+        id : 4,
+        nome: "Novidades",
+        status: false
+      }
+    ]
   }
 
   carregarCategorias(): void {
