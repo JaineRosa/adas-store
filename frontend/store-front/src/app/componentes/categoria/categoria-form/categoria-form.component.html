@@ -1,11 +1,11 @@
 <div class="col-12 titulo">
     <h2>{{isEdicao ? 'Editar Categoria': 'Nova Categoria'}}</h2>
 </div>
-<form onsubmit="salvar()">
+<form (submit)="salvar()">
 
-    <div class="col-6">
+    <div class="col-6"*ngIf="this.isEdicao">
         <label for="id" class="form-label">Id</label>
-        <input type="text" id="id" name="id" class="form-control" [(ngModel)]="this.categoria.id">
+        <input type="text" id="id" name="id" class="form-control" readonly [(ngModel)]="this.categoria.id">
     </div>
 
     <div class="col-12">

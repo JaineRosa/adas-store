@@ -24,8 +24,9 @@ export class CategoriaFormComponent {
     private router: Router
   ){}
 
-  NgOnInit(): void{
+  ngOnInit(): void{
     const id:number = Number(this.route.snapshot.paramMap.get('id'));
+    console.log("teste " + id)
     if(id && id !=0){
       this.isEdicao =true;
       this.categoriaService.findById(id).subscribe(retorno =>{
