@@ -1,0 +1,35 @@
+.titulo {
+    background-color: rgb(237, 237, 237);
+    border-left: 12px solid #1b000e;
+    padding: 16px;
+    margin-bottom: 18px;
+}
+
+form {
+
+    input[type="text"]{
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    label{
+        padding: 8px;
+        font-size: 16px;
+    }
+
+
+    button {
+        margin: 8px 8px 8px 0;
+        border: none;
+        background-color: #1b000e;
+        color: white;
+        padding: 8px 24px;
+        border-radius: 4px;
+    }
+
+    button:hover {
+        background-color: #be3980;
+    }
+
+}

@@ -1,1 +1,11 @@
-<p>produto-detalhe works!</p>
+<h2>Detalhes do Produto</h2>
+
+<div *ngIf="produto">
+    <p><strong>ID:</strong> {{produto.id}}</p>
+    <p><strong>Nome:</strong> {{produto.nome}}</p>
+    <p><strong>Preço:</strong> {{produto.preco}}</p>
+    <p><strong>Quantidade:</strong> {{produto.quantidade}}</p>
+    <p><strong>Categoria:</strong> {{produto.categoria}}</p>
+    <button class="dropdown-item" [routerLink]="['/produto/editar' , produto.id]">Editar</button>
+    <button class="dropdown-item" [routerLink]="['/produtos']">Voltar</button>
+</div>
